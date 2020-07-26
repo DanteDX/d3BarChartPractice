@@ -1,0 +1,22 @@
+[
+    {
+        "brand":"Samsung",
+        "user": 100000
+    },
+    {
+        "brand":"Walton",
+        "user": 50000
+    },
+    {
+        "brand":"Xiaomi",
+        "user": 70000
+    },
+    {
+        "brand":"MI",
+        "user": 150000
+    },
+    {
+        "brand":"DELL",
+        "user": 120000
+    }
+]

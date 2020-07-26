@@ -1,0 +1,9 @@
+svg{
+    border:3px solid green;
+}
+
+.mainContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
