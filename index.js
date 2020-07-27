@@ -2,8 +2,16 @@ const container = d3.select('.mainContainer')
     .append('svg')
     .attr('width',1000)
     .attr('height',1000);
+    
 
-d3.json('./index.json').then(data=>{
+db.collection('brandUser').get().then(res=>{
+
+    var data = [];
+    res.docs.forEach(doc => {
+        data.push(doc.data())
+    });
+
+    console.log(data);
 
     const x = d3.scaleBand()
         .domain(data.map(item => item.brand))
@@ -42,7 +50,7 @@ d3.json('./index.json').then(data=>{
         const yAxisGroup = graph.append('g');
         const xAxis = d3.axisBottom(x);
         const yAxis = d3.axisLeft(y)
-            .ticks(4)
+            .ticks(10)
             .tickFormat(d => d + ` users`);
         xAxisGroup.call(xAxis);
         yAxisGroup.call(yAxis);

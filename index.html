@@ -8,6 +8,30 @@
         <div class="mainContainer">
             
         </div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDL-PdyF1fLEM_xnc-ufjyGhD8yqNdihdA",
+            authDomain: "d3-practice-bd665.firebaseapp.com",
+            databaseURL: "https://d3-practice-bd665.firebaseio.com",
+            projectId: "d3-practice-bd665",
+            storageBucket: "d3-practice-bd665.appspot.com",
+            messagingSenderId: "35059722217",
+            appId: "1:35059722217:web:35cb14eff172345fa8cd78",
+            measurementId: "G-B61KV6BTST"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        // db.settings({ timestampsInSnapshots: true});
+        </script>
         <script src="https://d3js.org/d3.v5.min.js"></script>
         <script src="./index.js"></script>
     </body>
